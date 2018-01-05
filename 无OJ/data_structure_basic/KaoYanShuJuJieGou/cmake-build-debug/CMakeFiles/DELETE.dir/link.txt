@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/DELETE.dir/DeleteCopy/DeleteCopy.cpp.o  -o DELETE.exe -Wl,--out-implib,libDELETE.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

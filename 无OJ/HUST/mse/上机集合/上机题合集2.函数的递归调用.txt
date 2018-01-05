@@ -1,0 +1,68 @@
+题目：在半个中国象棋棋盘上，马在左下角（1,1）处，马走日字，而且只能往右走，不能向左，可以上下，求起点到（m，n）处有几种不同的走法。
+
+基本思想：递归回溯探索算法
+算法：
+1。存储棋盘（二维数组）
+2。
+
+
+测试数据：
+5  9  37 
+4  8 20    
+3 2 1        
+4 4  2    
+C代码程序：
+#include<stdio.h>
+
+int horse(int x1,int y1,int x2,int y2)
+{
+	int sum = 0;
+	if(x2<x1||(x2==x1&&y1!=y2))
+	{
+		return 0;
+	}
+	else
+		if(x1==x2&&y1==y2)
+		{return 1;}
+		else
+		{
+			if(x1+1<=9&&y1+2<=5)
+			{
+				sum = sum+horse(x1+1,y1+2,x2,y2);
+			}
+			if(x1+2<=9&&y1+1<=5)
+			{
+				sum = sum+horse(x1+2,y1+1,x2,y2);
+			}
+			if(x1+2<=9&&y1-1>=1)
+			{
+				sum = sum+horse(x1+2,y1-1,x2,y2);
+			}
+			if(x1+1<=9&&y1-2>=1)
+			{
+				sum = sum+horse(x1+1,y1-2,x2,y2);
+			}
+			return sum;
+		}
+	
+}
+int main()
+{
+	int m,n;
+	int result = 0;
+	scanf("%d",&m);
+	scanf("%d",&n);
+	if(m<=9&&n<=5&&m>=1&&n>=1)
+	{
+		result = horse(1,1,m,n);
+	}
+	else
+	{
+		printf("输入不合法，请重新输入，以空格分隔开，回车代表输入结束。");
+		scanf("%d",&m);
+	    scanf("%d",&n);
+	}
+	printf("%d",result);
+	return 0;
+}
+

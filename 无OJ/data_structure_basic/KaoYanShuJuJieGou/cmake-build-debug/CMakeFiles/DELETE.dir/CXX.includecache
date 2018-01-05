@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/a/CODE/KaoYanShuJuJieGou/DeleteCopy/DeleteCopy.cpp
+iostream
+-
+SqList.h
+/cygdrive/a/CODE/KaoYanShuJuJieGou/DeleteCopy/SqList.h
+
+/cygdrive/a/CODE/KaoYanShuJuJieGou/DeleteCopy/SqList.h
+

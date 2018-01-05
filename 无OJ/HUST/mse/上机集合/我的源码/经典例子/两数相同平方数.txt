@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+	int i,j,k,m,n,p;
+	for (i=100;i<1000;i++)
+	{
+		k=sqrt(i);
+		for (j=1;j<=k;j++)
+		{
+			if(j*j==i)
+			{
+				m=i%10;
+				n=i/10%10;
+				p=i/100;
+				if(m==n||n==p||m==p)
+					printf("%d is a 平方数\n",i);
+			}
+		}
+	}
+}
+
+数组方案：
+#include<stdio.h>
+void main()
+{
+	int i,j,k=0;
+	int a[9],*p;
+	p=a;
+	for(i=100;i<1000;i++)
+		for(j=0;j<100;j++)
+		{
+			int a,b,c;
+			a=i%10;
+			b=i/10%10;
+			c=i/100;
+			if((a==b||a==c||b==c)&&(i==j*j))
+			{
+				*p=i;
+				p++;
+			}
+		}
+		for(k=0;k<9;k++)
+			printf("%d\n",a[k]);
+}

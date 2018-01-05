@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int comp(Btnode *p)
+{
+	int A,B;
+	if (p!NULL)
+	{
+	if (p->lchild!=NULL&&p->rchild!=NULL)
+	{
+		A=comp(p->lchild);
+		B=comp(p->rchild);
+		return yunsuan(A,B,p->data);
+	}
+	else
+		return p->data-'0';
+	}
+	else 
+		return 0;
+}

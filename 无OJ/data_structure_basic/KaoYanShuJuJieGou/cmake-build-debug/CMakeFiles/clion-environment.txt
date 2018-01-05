@@ -1,0 +1,3 @@
+ToolSet: 2.8.2@C:\Dev-Cpp\cygwin64
+Options: 
+CMake: 3.8.2@E:\Intelli\CLion 2017.2\bin\cmake_cygwin\bin\cmake.exe

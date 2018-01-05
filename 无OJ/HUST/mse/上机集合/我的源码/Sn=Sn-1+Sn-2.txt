@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void main()
+{
+	int s(int n);
+	int k;
+	printf("input k:");
+	scanf("%d",&k);
+	printf("s(%d)=%d\n",k,s(k));
+}
+
+int s(int n)
+{
+
+if(n==1 || n==2)
+		return 1;
+	else
+		return s(n-1)+s(n-2);
+}
+
+
+int s£»
+if(n==1 || n==2)
+		s=1;
+	else
+		s=s(n-1)+s(n-2);
+return s;

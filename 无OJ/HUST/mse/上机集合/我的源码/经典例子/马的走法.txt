@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int horse(int x1,int y1,int x2,int y2)
+{
+	int result=0;
+	if (y1>y2 || y1==y2 && x1!=x2)
+		return 0;
+	else if (x1==x2 && y1==y2)
+			return 1;
+		else 
+		{
+			if (x1-1>0 && y1+2<=9)
+				result+=horse(x1-1,y1+2,x2,y2);
+			if (x1-2>0 && y1+1<=9)
+				result+=horse(x1-2,y1+1,x2,y2);
+			if (x1+2<=5 && y1+1<=9)
+				result+=horse(x1+2,y1+1,x2,y2);
+			if (x1+1<=5 && y1+2<=9)
+	result+=horse(x1+1,y1+2,x2,y2);
+			return result;
+		}
+}
+
+void main()
+{
+	int m,n;
+	printf("请输入目的地址：\n");
+	scanf("%d%d",&m,&n);
+	while (m>5 || m<1 || n>9 || n<1) //半个中国象棋的边界
+	{
+		printf("输入错误，请重新输入：");
+		scanf("%d%d",&m,&n);
+	}
+
+	printf("目的结果数为%d\n",horse(1,1,m,n));
+}

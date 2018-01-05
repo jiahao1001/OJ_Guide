@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.8)
+project(KaoYanShuJuJieGou)
+
+set(CMAKE_CXX_STANDARD 11)
+
+set(EXE_ConvertString ConvertString/convert_string.cpp)
+set(EXE_DELETE DeleteCopy/DeleteCopy.cpp DeleteCopy/SqList.h)
+set(EXE_KMP KMP/kmp.cpp)
+set(EXE_LinkList LinkList/TestLinkList.cpp LinkList/Assistance.h LinkList/LinkList.h LinkList/Node.h)
+set(EXE_SORT Sort/sort.cpp)
+add_executable(ConvertString ${EXE_ConvertString})
+add_executable(DELETE ${EXE_DELETE})
+add_executable(KMP ${EXE_KMP})
+add_executable(LinkList ${EXE_LinkList})
+add_executable(SORT ${EXE_SORT})

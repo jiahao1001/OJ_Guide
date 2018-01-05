@@ -1,0 +1,17 @@
+#include "stdio.h" 
+void main()  
+{
+	int i,j,sum;
+	for(i=1;i<1000;i++)//对1到1000里面的数一次进行尝试 
+	{
+		sum=0;   //给sum赋值，同时对上一次值进行清空     
+		for(j=1;j<=i/2;j++)//查找因子 
+		{      
+			if(i%j==0)//如果是因子  
+				sum=sum+j;//把当前的因子累加到sum中    
+		}  
+		if(sum==i)    //判断是不是完数，即因子之和等于本身 
+			printf("%5d\n",i); 
+	} 
+
+}

@@ -1,0 +1,303 @@
+第一部分 计算机算法常用术语中英对照
+Data Structures 基本数据结构 
+Dictionaries 字典 
+Priority Queues 堆 
+Graph Data Structures 图 
+Set Data Structures 集合 
+Kd-Trees 线段树 
+Numerical Problems 数值问题 
+Solving Linear Equations 线性方程组 
+Bandwidth Reduction 带宽压缩 
+Matrix Multiplication 矩阵乘法 
+Determinants and Permanents 行列式 
+Constrained and Unconstrained Optimization 最值问题 
+Linear Programming 线性规划 
+Random Number Generation 随机数生成 
+Factoring and Primality Testing 因子分解/质数判定 
+Arbitrary Precision Arithmetic 高精度计算 
+Knapsack Problem 背包问题 
+Discrete Fourier Transform 离散Fourier变换 
+Combinatorial Problems 组合问题 
+Sorting 排序 
+Searching 查找 
+Median and Selection 中位数 
+Generating Permutations 排列生成 
+Generating Subsets 子集生成 
+Generating Partitions 划分生成 
+Generating Graphs 图的生成 
+Calendrical Calculations 日期 
+Job Scheduling 工程安排 
+Satisfiability 可满足性 
+Graph Problems -- polynomial 图论-多项式算法 
+Connected Components 连通分支 
+Topological Sorting 拓扑排序 
+Minimum Spanning Tree 最小生成树 
+Shortest Path 最短路径 
+Transitive Closure and Reduction 传递闭包 
+Matching 匹配 
+Eulerian Cycle / Chinese Postman Euler回路/中国邮路 
+Edge and Vertex Connectivity 割边/割点 
+Network Flow 网络流 
+Drawing Graphs Nicely 图的描绘 
+Drawing Trees 树的描绘 
+Planarity Detection and Embedding 平面性检测和嵌入 
+Graph Problems -- hard 图论-NP问题 
+Clique 最大团 
+Independent Set 独立集 
+Vertex Cover 点覆盖 
+Traveling Salesman Problem 旅行商问题 
+Hamiltonian Cycle Hamilton回路 
+Graph Partition 图的划分 
+Vertex Coloring 点染色 
+Edge Coloring 边染色 
+Graph Isomorphism 同构 
+Steiner Tree Steiner树 
+Feedback Edge/Vertex Set 最大无环子图 
+Computational Geometry 计算几何 
+Convex Hull 凸包 
+Triangulation 三角剖分 
+Voronoi Diagrams Voronoi图 
+Nearest Neighbor Search 最近点对查询 
+Range Search 范围查询 
+Point Location 位置查询 
+Intersection Detection 碰撞测试 
+Bin Packing 装箱问题 
+Medial-Axis Transformation 中轴变换 
+Polygon Partitioning 多边形分割 
+Simplifying Polygons 多边形化简 
+Shape Similarity 相似多边形 
+Motion Planning 运动规划 
+Maintaining Line Arrangements 平面分割 
+Minkowski Sum Minkowski和 
+Set and String Problems 集合与串的问题 
+Set Cover 集合覆盖 
+Set Packing 集合配置 
+String Matching 模式匹配 
+Approximate String Matching 模糊匹配 
+Text Compression 压缩 
+Cryptography 密码 
+Finite State Machine Minimization 有穷自动机简化 
+Longest Common Substring 最长公共子串 
+Shortest Common Superstring 最短公共父串 
+DP——Dynamic Programming——动态规划 
+recursion —— 递归 
+
+
+第二部分 数据结构英语词汇
+
+数据抽象 data abstraction
+数据元素 data element
+数据对象 data object
+数据项 data item
+数据类型 data type 
+抽象数据类型 abstract data type
+
+逻辑结构 logical structure
+物理结构 phyical structure
+线性结构 linear structure
+非线性结构 nonlinear structure
+
+基本数据类型 atomic data type
+固定聚合数据类型 fixed-aggregate data type
+可变聚合数据类型 variable-aggregate data type
+线性表 linear list 
+栈 stack
+队列 queue
+串 string 
+数组 array
+树 tree
+图 grabh
+
+查找，线索 searching
+更新 updating
+排序（分类) sorting
+插入 insertion
+删除 deletion
+
+前趋 predecessor
+后继 successor
+直接前趋 immediate predecessor
+直接后继 immediate successor
+双端列表 deque(double-ended queue)
+循环队列 cirular queue
+指针 pointer
+先进先出表（队列）first-in first-out list
+后进先出表（队列）last-in first-out list
+栈底 bottom
+栈定 top
+压入 push
+弹出 pop
+队头 front
+队尾 rear
+上溢 overflow
+下溢 underflow
+
+数组 array
+矩阵 matrix
+多维数组 multi-dimentional array
+以行为主的顺序分配 row major order
+以列为主的顺序分配 column major order
+三角矩阵 truangular matrix
+对称矩阵 symmetric matrix
+稀疏矩阵 sparse matrix
+转置矩阵 transposed matrix
+
+链表 linked list 
+线性链表 linear linked list 
+单链表 single linked list 
+多重链表 multilinked list 
+循环链表 circular linked list 
+双向链表 doubly linked list 
+十字链表 orthogonal list
+广义表 generalized list
+
+链 link 
+指针域 pointer field 
+链域 link field 
+头结点 head node
+头指针 head pointer
+尾指针 tail pointer
+串 string
+空白（空格）串 blank string
+空串（零串）null string 
+子串 substring
+
+树 tree
+子树 subtree
+森林 forest
+根 root
+叶子 leaf
+结点 node 
+深度 depth
+层次 level
+双亲 parents
+孩子 children
+兄弟 brother
+祖先 ancestor
+子孙 descentdant
+
+二叉树 binary tree
+平衡二叉树 banlanced binary tree
+满二叉树 full binary tree
+完全二叉树 complete binary tree
+遍历二叉树 traversing binary tree
+二叉排序树 binary sort tree
+二叉查找树 binary search tree
+线索二叉树 threaded binary tree
+哈夫曼树 Huffman tree
+有序数 ordered tree
+无序数 unordered tree
+判定树 decision tree
+双链树 doubly linked tree
+数字查找树 digital search tree
+
+树的遍历 traversal of tree
+先序遍历 preorder traversal 
+中序遍历 inorder traversal 
+后序遍历 postorder traversal
+
+图 graph
+子图 subgraph
+有向图 digraph(directed graph)
+无向图 undigraph(undirected graph)
+完全图 complete graph
+连通图 connected graph
+非连通图 unconnected graph
+强连通图 strongly connected graph 
+弱连通图 weakly connected graph
+加权图 weighted graph
+有向无环图 directed acyclic graph
+稀疏图 spares graph
+稠密图 dense graph
+重连通图 biconnected graph
+二部图 bipartite graph
+
+边 edge
+顶点 vertex
+弧 arc
+路径 path
+回路（环）cycle
+弧头 head
+弧尾 tail
+源点 source
+终点 destination
+汇点 sink 
+权 weight
+连接点 articulation point
+初始结点 initial node
+终端结点 terminal node
+相邻边 adjacent edge
+相邻顶点 adjacent vertex
+关联边 incident edge
+入度 indegree
+出度 outdegree
+最短路径 shortest path
+有序对 ordered pair 
+无序对 unordered pair
+简单路径 simple path
+简单回路 simple cycle
+连通分量 connected component
+邻接矩阵 adjacency matrix
+邻接表 adjacency list
+邻接多重表 adjacency multilist
+遍历图 traversing graph
+生成树 spanning tree
+最小（代价）生成树 minimum(cost)spanning tree
+生成森林 spanning forest
+
+拓扑排序 topological sort 
+偏序 partical order
+拓扑有序 topological order
+AOV网 activity on vertex network
+AOE网 activity on edge network
+关键路径 critical path
+
+匹配 matching
+最大匹配 maximum matching
+增广路径 augmenting path
+增广路径图 augmenting path graph
+
+查找 searching
+线性查找（顺序查找）linear search (sequential search)
+二分查找 binary search
+分块查找 block search
+散列查找 hash search 
+平均查找长度 average search length
+
+散列表 hash table
+散列函数 hash funticion
+直接定址法 immediately allocating method
+数字分析法 digital analysis method
+平方取中法 mid-square method
+折叠法 folding method
+除法 division method
+随机数法 random number method
+
+排序 sort
+内部排序 internal sort
+外部排序 external sort
+插入排序 insertion sort
+随小增量排序 diminishing increment sort
+选择排序 selection sort
+堆排序 heap sort
+快速排序 quick sort
+归并排序 merge sort
+基数排序 radix sort
+外部排序 external sort
+平衡归并排序 balance merging sort
+二路平衡归并排序 balance two-way merging sort
+多步归并排序 ployphase merging sort
+置换选择排序 replacement selection sort
+
+文件 file
+主文件 master file 
+顺序文件 sequential file
+索引文件 indexed file
+索引顺序文件 indexed sequential file
+索引非顺序文件 indexed non-sequential file
+直接存取文件 direct access file
+多重链表文件 multilist file
+倒排文件 inverted file
+目录结构 directory structure
+树型索引 tree index  
+ 

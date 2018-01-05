@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+void main()
+{
+	int i,j=0,temp[9];
+	int a[9]={1,2,3,4,-1,1,-2,-1,-4};
+	for(i=8;i>=0;i--)
+	{
+		if(a[i]<0)
+		{
+			temp[j]=a[i];//取出负数
+			j=j+1;
+			a[i]=0;      //在原数组中删除负数
+		}
+}
+	for(i=0;i<9;i++)
+		if(a[i]!=0)
+			temp[j++]=a[i];//取出正数
+	for(i=0;i<9;i++)
+	{
+		a[i]=temp[i]; //完成后元素回归
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+}

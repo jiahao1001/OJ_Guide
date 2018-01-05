@@ -1,0 +1,20 @@
+# include <stdio.h>
+# include <math.h>
+void main ()
+{
+	int m,k,i,n=0;
+	for (m=11;m<=100000;m=m+2)
+	{
+		k=sqrt(m);
+		for (i=2;i<=k;i++)		
+			if(m%i==0)
+				break;
+			if(i>=k+1)
+			{
+				printf("%d\n",m);
+				n++;
+			}
+			
+	}
+	printf("\n");
+}

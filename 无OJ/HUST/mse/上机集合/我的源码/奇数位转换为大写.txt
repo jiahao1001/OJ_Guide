@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char ss[10];
+	int i;
+	printf ("input chars:\n");
+	scanf("%s",ss);
+	//for (i=0;i<10;i++)
+		//scanf("%c",&ss[i]);
+	
+	for (i=0;i<10;i++)
+	printf("%c\n",ss[i]);
+
+	for(i=0;ss[i]!='\0';i=i+2)
+	{
+		if(ss[i]>='a'&&ss[i]<='z')
+			ss[i]=ss[i]-32;
+	}
+    printf("output:\n");
+	printf("%s\n",ss);
+	return 0;
+}

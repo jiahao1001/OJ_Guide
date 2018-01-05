@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/a/CODE/KaoYanShuJuJieGou/LinkList/Assistance.h
+cstring
+-
+iostream
+-
+limits
+-
+cmath
+-
+fstream
+-
+cctype
+-
+ctime
+-
+cstdlib
+-
+cstdio
+-
+iomanip
+-
+cstdarg
+-
+cassert
+-
+
+/cygdrive/a/CODE/KaoYanShuJuJieGou/LinkList/LinkList.h
+Assistance.h
+/cygdrive/a/CODE/KaoYanShuJuJieGou/LinkList/Assistance.h
+Node.h
+/cygdrive/a/CODE/KaoYanShuJuJieGou/LinkList/Node.h
+
+/cygdrive/a/CODE/KaoYanShuJuJieGou/LinkList/Node.h
+
+/cygdrive/a/CODE/KaoYanShuJuJieGou/LinkList/TestLinkList.cpp
+LinkList.h
+/cygdrive/a/CODE/KaoYanShuJuJieGou/LinkList/LinkList.h
+

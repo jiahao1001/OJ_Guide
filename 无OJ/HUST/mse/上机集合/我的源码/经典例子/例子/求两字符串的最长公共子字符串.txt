@@ -1,0 +1,77 @@
+#include <stdio.h> 
+#include <stdlib.h>
+#define N 255
+int MaxString(char *str1,char *str2,char s[])
+{ 
+	int i, j, k, index, max=0;
+	for(i=0; str1[i]; i++)  //字符串str1
+		for(j=0; str2[j]; j++)  //字符串str2
+		{ 
+			for(k=0; str1[i+k]==str2[j+k] && (str2[j+k] || str1[i+k]); k++);
+			if(k>max) 
+			{
+				index = j; max = k; //k记录本次相同子串，max记录当前最大子串，如果本次子串个数>max，max更新为k
+			}  
+		}
+		for(i=0; i<max; i++) s[i] = str2[index++];
+		return max; 
+}
+
+int  main() 
+{
+	int length; 
+	char str1[N],str2[N],s[N];
+	printf("Please input two strings:\n"); 
+	gets(str1); 
+	gets(str2);
+	length = MaxString(str1, str2,s);
+	printf("str1: %s\n",str1); 
+	printf("str2: %s\n",str2);
+	printf("MaxString: %s\n",s);
+	printf("length=%d\n",length); 
+	system("pause" ); 
+	return 0; 
+}
+
+
+
+
+#include<stdio.h>
+void main()
+{
+    char s1[]="abc ab abcdefg abcde",s2[]="ab babcde efg abcd",*p,*q,*h,*t;
+    char *b[50];
+    int max=0,k,i;
+    h=p=s1;
+    q=s2;
+    for(;*p!='\0';p++)
+    {
+        k=0;
+        q=s2;
+        while(*q!='\0')
+        {
+            for(;*q!='\0'&&*q!=*p;q++);
+            if(*q!='\0')
+                b[k++]=q++;
+            else
+                b[k]=NULL;
+        }    //用b[]记下s2中与*p相同的元素的位置 
+        k=0;
+        while(b[k]!=NULL)
+        {
+            for(i=0;*(b[k]+i)==*(p+i)&&*(p+i)!='\0';i++)
+            {
+                if(i>max)
+                {
+                    max=i;
+                    h=b[k];
+                    t=b[k]+i+1;
+                }
+            }
+            k++;
+        }    //以b[k]所指的元素为起点，向后寻找相同序列，
+                                                           //将最长序列长度记录在max，起始地址记录在h 
+    }
+    *t='\0';
+    printf("%s\n",h);
+}

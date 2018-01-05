@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+void print(char *s1, char *s2, int n)//s1指向先序遍历,s2中序,n为长度
+{
+   char *st = strchr(s2,s1[0]);
+   if(n==0)
+     return;
+   print(s1+1,s2,st-s2);                              //递归
+   print(s1+1+(st-s2),st+1,n-1-(st-s2));
+   printf("%c",s1[0]);
+}
+
+int main()
+{
+   char s1[]="234567";//先序遍历
+   char s2[]="435627";//中序遍历
+   print(s1,s2,6);
+   printf("\n");
+   return 0;
+}

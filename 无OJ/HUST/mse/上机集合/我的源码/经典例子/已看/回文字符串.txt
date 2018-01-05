@@ -1,0 +1,38 @@
+
+
+#include <stdio.h>
+#include <string.h>
+
+void main ()
+{
+	char s[100];
+	int i,j,n;
+	printf("please input the string:");
+	gets(s);
+	n=strlen(s);
+	for (i=0,j=n-1;i<j;i++,j--)
+		//for(j=n-1;i<j;j--)
+			if (s[i]!=s[j])
+				break;
+			if (i>=j)
+				printf ("%s is a 回文串 \n",s);
+			else
+			    printf ("%s is not a 回文串\n",s);
+} 
+
+
+#include <stdio.h>
+#include <string.h>
+#include<string.h>
+	 main()
+	 { char s[100];
+	 int i,j,n;
+	 printf("输入字符串：\n");
+	 gets(s); 
+	 n=strlen(s);
+	 for(i=0,j=n-1;i<j;i++,j--)
+		 if(s[i]!=s[j])   break;
+		 if(i>=j) printf("是回文串\n");
+		 else     printf("不是回文串\n");
+	 }
+

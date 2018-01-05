@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/SORT.dir/Sort/sort.cpp.o  -o SORT.exe -Wl,--out-implib,libSORT.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

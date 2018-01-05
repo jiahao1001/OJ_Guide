@@ -1,0 +1,46 @@
+/*将ss所指字符串中所有下标为奇数位置的字母转换为大写（若该位置上不是字母，则不转换）。举例：若输入abc4Efg,则应输出aBc4EFg*/
+
+(c++)
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+   char ss[10]={'0'};
+   int i;
+   
+   for(i=0;i<10;i++) ss[i]='0';
+   cin.getline(ss,10);
+   for(i=0;ss[i]!='0';i++)
+   {
+      if((i%2==1)&&ss[i]>'a'&&ss[i]<'z') ss[i]+=('A'-'a');          
+   }
+   
+   for(i=0;ss[i]!='0';i++)
+   cout<<ss[i];
+   
+   system("pause");    
+}
+
+(c)
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char ss[10];
+	int i;
+	printf("input:\n");
+	scanf("%s",ss);
+	for(i=1;ss[i]!='\0';i=i+2)
+	{
+		if(ss[i]>='a'&&ss[i]<='z')
+			ss[i]=ss[i]-32;
+	}
+    printf("output:\n");
+	printf("%s\n",ss);
+	return 0;
+}
+
+
+

@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/LinkList.dir/LinkList/TestLinkList.cpp.o  -o LinkList.exe -Wl,--out-implib,libLinkList.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/ConvertString.dir/ConvertString/convert_string.cpp.o  -o ConvertString.exe -Wl,--out-implib,libConvertString.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

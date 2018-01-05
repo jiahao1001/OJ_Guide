@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+	int i,j,k;
+	
+	for(i=100;i<1000;i++)
+	{
+		k=sqrt(i);
+		if(i%10==i/100)
+		{
+			for(j=1;j<=k;j++)
+			
+				if(i==j*j)
+					printf("%d\n",i);
+			
+		}
+	}
+}
+
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+	int i,j;	
+	for(i=100;i<1000;i++)
+	{
+		if(i/100==i%10)
+		{
+			for(j=1;j<=sqrt(i);j++)
+				if(i==j*j)
+					printf("%d is the number which we need\n",i);
+		}
+	}
+}

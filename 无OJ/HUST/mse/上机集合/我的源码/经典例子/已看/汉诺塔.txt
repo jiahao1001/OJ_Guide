@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void move (char a,char b)
+{
+	printf("%c-->%c\n",a,b);
+}
+
+void hanuoi(int n,char one ,char two,char three)
+{
+		if (n==1)
+			move (one,three);
+		else
+		{
+			hanuoi(n-1,one,three,two);
+			move(one,three);
+			hanuoi(n-1,two,one,three);
+		}
+}
+
+
+
+void main()
+{
+	int n;
+	printf ("please input the number of disks:");
+	scanf("%d",&n);
+		printf("The process of moving disks is listed below\n");
+	hanuoi(n,'A','B','C');
+}
