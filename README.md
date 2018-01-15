@@ -1,4 +1,5 @@
-# POJ-Classification
+# 机试宝典~  
+#####                     by Jiahao Liu, Qijie Zhao
 
 #### 机试环节总的来说需要分为如下**两种情况来准备**
 - 有OJ（openjudge)
