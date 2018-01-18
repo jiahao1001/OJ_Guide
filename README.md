@@ -44,3 +44,28 @@
 以及各个学校的历年真题
 
 王道机试指南
+
+
+
+#### 使用指南  update on 1-18,2018
+
+- 把所有东西下载到本地：
+
+    (1) windows/linux操作一样：点击绿色的**clone or download**按钮，然后下载。
+    
+    (2) git clone:
+        对于windows用户，建议下载安装cygwin，然后打开cygwin terminal,通过git clone命令下载。对于linux/macos用户，直接git指令就可以使用。
+        
+        git clone https://github.com/jiahao1001/OJ_Guide.git
+        
+![image](https://github.com/jiahao1001/OJ_Guide/tmp/example.jpg)
+    即可下载到本地。
+- 不用下载，直接在线翻看：
+    
+    （0）建议 sublime + VisualStudio来搭配刷题。sublime的提示做的很好，能大大提升写代码速度，VS则是用于编译。（如果有自己顺手的则忽略此条）
+    
+    （1） 先调研到自己报考学校是否有Openjudge的机试测试。然后对应到相应的文件夹下。
+    
+    （2） 如果有OJ, 那么我们建议把分类下的各个不同类型的题目先练习起来。如果没有OJ, 我们优先建议从王道的题目刷起，因为王道的结构做的很好，由浅入深，从数据结构入手，请从wangdao文件夹下找到对应题目，以及那本pdf。
+    
+    （3） 刷题的同时还要尝试去找找历年考题，并用之对自己进行测试。
