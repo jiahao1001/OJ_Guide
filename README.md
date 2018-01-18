@@ -45,7 +45,7 @@
 
 王道机试指南
 
-
+-------
 
 #### 使用指南  update on 1-18,2018
 
@@ -57,8 +57,9 @@
         对于windows用户，建议下载安装cygwin，然后打开cygwin terminal,通过git clone命令下载。对于linux/macos用户，直接git指令就可以使用。
         
         git clone https://github.com/jiahao1001/OJ_Guide.git
-        
-![image](https://github.com/jiahao1001/OJ_Guide/tmp/example.jpg)
+
+
+![image](https://github.com/jiahao1001/OJ_Guide/tree/master/tmp/example.jpg)
     即可下载到本地。
 - 不用下载，直接在线翻看：
     
